@@ -37,8 +37,6 @@
 #### Limitações
 
 - Embora a escolha da mediana seja uma boa estratégia, ainda existem casos em que o QuickSort pode apresentar performance O(n^2).
-- O cálculo da mediana adiciona um custo adicional ao algoritmo, que pode ser significativo para arrays muito grandes.
-
 
 #### Instruções de uso
 
