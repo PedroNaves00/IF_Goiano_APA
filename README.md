@@ -1,6 +1,6 @@
 ## IF_Goiano_APA
 
-#Escolha da mediana como pivô
+##Escolha da mediana como pivô
 A escolha do pivô é um fator importante para o desempenho do quicksort. No caso do quicksort tradicional, o pivô é escolhido aleatoriamente. Isso pode levar a um pior caso no qual o vetor já está ordenado, resultando em um tempo de execução O(n^2).
 
 A escolha da mediana como pivô reduz a probabilidade de ocorrer o pior caso. Isso ocorre porque a mediana é um elemento central do vetor, e é menos provável que o vetor já esteja ordenado em torno da mediana.
