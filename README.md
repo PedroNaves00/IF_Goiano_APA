@@ -1,12 +1,52 @@
 ## IF_Goiano_APA
 
-##Escolha da mediana como pivô
-A escolha do pivô é um fator importante para o desempenho do quicksort. No caso do quicksort tradicional, o pivô é escolhido aleatoriamente. Isso pode levar a um pior caso no qual o vetor já está ordenado, resultando em um tempo de execução O(n^2).
+## QuickSortMediana: Ordenação eficiente com mediana como pivô
 
-A escolha da mediana como pivô reduz a probabilidade de ocorrer o pior caso. Isso ocorre porque a mediana é um elemento central do vetor, e é menos provável que o vetor já esteja ordenado em torno da mediana.
+**QuickSortMediana** é uma implementação do algoritmo de ordenação QuickSort que utiliza a mediana como pivô. Esta escolha de pivô melhora a performance do algoritmo em comparação com a escolha aleatória, especialmente em casos adversos.
 
-No código fornecido, a escolha da mediana é feita na função partition(). A função primeiro troca o pivô com o elemento da posição central do vetor. Em seguida, a função itera sobre o vetor, movendo todos os elementos menores que o pivô para a metade esquerda do vetor. O pivô é então colocado na posição correta, dividindo o vetor em duas metades.
+### Documentação
 
-Complexidade de tempo
+#### Funcionalidades
+
+- Ordenação de arrays de inteiros utilizando o algoritmo QuickSort.
+- Escolha do pivô como a mediana do subvetor a ser particionado.
+- Leitura de dados de um arquivo de texto para facilitar testes.
+
+#### Estrutura do código
+
+- **Classe QuickSortMediana:**
+    - Método `quicksort(int[] arr, int low, int high)`: Implementa o algoritmo QuickSort recursivamente.
+    - Método `partition(int[] arr, int low, int high, int pi)`: Particiona o subvetor em torno do pivô escolhido (mediana).
+    - Método `swap(int[] arr, int i, int j)`: Troca os valores de dois elementos do array.
+    - Método `main(String[] args)`: Leitura de dados do arquivo, execução do QuickSort e impressão dos resultados.
+
+#### Fluxo do programa
+
+1. O programa lê os dados de um arquivo de texto e converte os valores para um array de inteiros.
+2. O método `quicksort` é chamado para ordenar o array recursivamente.
+3. O método `partition` é utilizado para dividir o subvetor em duas partes: elementos menores que o pivô e elementos maiores que o pivô.
+4. A mediana é calculada como o elemento central do subvetor e utilizada como pivô.
+5. O processo de ordenação é repetido recursivamente para cada subvetor.
+6. Ao final, o array ordenado é impresso na tela, juntamente com o tempo de execução do algoritmo.
+
+#### Vantagens da escolha da mediana como pivô
+
+- Reduz a probabilidade de cair no pior caso do QuickSort, onde a complexidade temporal é O(n^2).
+- Melhora a performance do algoritmo em comparação com a escolha aleatória do pivô, especialmente para arrays não aleatórios.
+
+#### Limitações
+
+- Embora a escolha da mediana seja uma boa estratégia, ainda existem casos em que o QuickSort pode apresentar performance O(n^2).
+- O cálculo da mediana adiciona um custo adicional ao algoritmo, que pode ser significativo para arrays muito grandes.
+
+
+#### Instruções de uso
+
+Para utilizar o código, salve o arquivo em um projeto Java e execute a classe `QuickSortMediana`. Certifique-se de que o arquivo de dados "dados500_mil.txt" está no caminho especificado no código.
+
+#### Considerações finais
+
+O QuickSortMediana é uma implementação eficiente do algoritmo QuickSort que utiliza a mediana como pivô. Esta escolha melhora a performance do algoritmo em comparação com a escolha aleatória, especialmente em casos adversos. O código é bem estruturado e comentado, facilitando a compreensão e o uso.
+
 
 A escolha da mediana não afeta a complexidade de tempo do quicksort. O caso médio e o melhor caso permanecem O(n log n), e o pior caso é reduzido para O(n^(2/3)).
