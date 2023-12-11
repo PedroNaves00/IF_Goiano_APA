@@ -47,4 +47,3 @@ Para utilizar o código, salve o arquivo em um projeto Java e execute a classe `
 O QuickSortMediana é uma implementação eficiente do algoritmo QuickSort que utiliza a mediana como pivô. Esta escolha melhora a performance do algoritmo em comparação com a escolha aleatória, especialmente em casos adversos. O código é bem estruturado e comentado, facilitando a compreensão e o uso.
 
 
-A escolha da mediana não afeta a complexidade de tempo do quicksort. O caso médio e o melhor caso permanecem O(n log n), e o pior caso é reduzido para O(n^(2/3)).
